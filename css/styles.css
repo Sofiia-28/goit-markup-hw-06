@@ -678,8 +678,9 @@ img {
   border-radius: 4px;
 }
 .modal-button {
-  position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
   width: 24px;
   height: 24px;
@@ -692,11 +693,6 @@ img {
   transition: background-color var(--anim);
 }
 .modal-icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
   transition: fill var(--anim);
 }
 .modal-button:hover {
@@ -743,7 +739,6 @@ img {
   height: 40px;
   padding-right: 38px;
   padding-left: 38px;
-  margin-bottom: 8px;
 
   border: 1px solid var(--navy-blue-modal);
   border-radius: 4px;
@@ -759,7 +754,7 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
-  transform: translateY(-68%);
+  transform: translateY(-50%);
 
   fill: var(--navy-blue);
   transition: fill var(--anim);
